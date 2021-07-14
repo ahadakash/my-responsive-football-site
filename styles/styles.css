@@ -1,11 +1,12 @@
-/* fonts */
+/* ---- fonts ---- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* common styles or utilities */
 body{
     font-family: 'Poppins', sans-serif;
 }
-/* header style */
+
+/* ---- header style ---- */
 .header {
     width: 100%;
     height: 677px;
@@ -44,9 +45,10 @@ body{
     height: 44px;
     color: white;
     text-align: center;
+    transition: transform 0.5s ease;
 }
 .header-left__button:hover {
-    animation: buttonAnimation 1s ease 0s 1 normal forwards;
+    transform: scale(1.26);
 }
   
 .fa-arrow-right.btn_right {
@@ -63,15 +65,17 @@ body{
     height: 100%;
     animation: imageAnimation 8s ease 0s 1 normal forwards;
 }
-/* main style  */
+
+/* ---- main style ----  */
+
 .container-2{
-    margin-top: 100px;
-    margin-left: 220px;
-    margin-right: 250px;
+    margin-top: 70px;
+    margin-left: 180px;
+    margin-right: 200px;
 }
 h2{
     color: #18191F;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 18px;
 }
@@ -96,17 +100,62 @@ h2{
 }
 .player p{
     color: #6C6C6C;
-    font-size: 25px;
+    font-size: 18px;
     text-align: justify;
     margin-top: 0%;
 }
-/* footer style */
+
+/* ---- extra section style ----  */
+.extra-section{
+    background-color: rgb(241, 241, 234);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.extra-text{
+    color: white;
+    padding-right: 0px;
+    padding-bottom: 0;
+}
+.extra-span{
+    color: rgb(235, 119, 12);
+}
+.extra-button{
+    border: 0 solid white;
+    font-weight: bolder;
+    background-color: tomato;
+    background-image: linear-gradient(rgb(233, 111, 89), rgb(236, 130, 43));
+    color: white;
+    border-radius: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.extra-image{
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 0;
+}
+.resize{
+    width: 400px;
+    height: auto;
+    border-radius: 10%;
+}
+
+
+/* ---- footer style ---- */
+
 .footer-style{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 135px;
+    margin-top: 90px;
 
 }
 .footer-details{
@@ -117,8 +166,8 @@ h2{
 }
 .footer-img > img{
     display: inline-block;
-    width: 600px;
-    height: 200px;
+    width: 480px;
+    height: 130px;
 }
 .footer-icon {
     margin-bottom: 20px;
@@ -127,12 +176,17 @@ h2{
   border-radius: 50%;
   padding: 7px;
   margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 2px;
   transition: transform 0.7s ease;
 }
 .icon-size{
     width: 35px;
     height: 20px;
 }
-.footer-details p{
+.footer-text p{
     font-size: 20px;
+}
+.footer-icon:hover {
+    transform: scale(1.26);
 }
